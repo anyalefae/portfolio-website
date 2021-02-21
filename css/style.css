@@ -1,6 +1,6 @@
 /*
 Colors used:
-Primary Color (Off-White): #F8AFF;
+Primary Color (Off-White): #F8FAFF;
 Secondary Color (Blurple): #7476B0;
 Accent Color (Wine): #653040;
 */
@@ -71,3 +71,51 @@ a:focus {
 a:active {
   color: #653040;
 }
+
+.button {
+  display: inline-block;
+  background-color: #7476B0;
+  color: #F8FAFF;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 3px;
+  transition: 0.2s opacity;
+}
+
+.button:visited {
+  color: #F8FAFF;
+}
+
+.button:hover {
+  opacity: 0.8;
+  border-bottom: 0;
+}
+
+.button:active {
+  color: #653040
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #7476B0;
+  text-transform: uppercase;
+  border: 2px solid #7476B0;
+}
+
+.button.contact:hover {
+  background-color: #7476B0;
+  color: #F8FAFF;
+  opacity: 0.8;
+}
+
+.button.contact:active {
+  background-color: transparent;
+  color: #653040;
+  border: 2px solid #653040;
+}
+
+#hero {}
+
+#work {}
+
+#contact{}
