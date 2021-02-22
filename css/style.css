@@ -65,7 +65,7 @@ a:focus {
   color: #653040;
   text-decoration: none;
 	padding-bottom: 1px;
-	border-bottom: 1px solid #653040;
+	border-bottom: 2px solid #653040;
 }
 
 a:active {
@@ -88,7 +88,6 @@ a:active {
 
 .button:hover {
   opacity: 0.8;
-  border-bottom: 0;
 }
 
 .button:active {
@@ -106,6 +105,8 @@ a:active {
   background-color: #7476B0;
   color: #F8FAFF;
   opacity: 0.8;
+  padding-bottom: 1px;
+	border-bottom: 2px solid #653040;
 }
 
 .button.contact:active {
@@ -119,3 +120,11 @@ a:active {
 #work {}
 
 #contact{}
+
+header {
+  background-color: #FAF8FF;
+  border: 2px solid #7476B0;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 10px;
+}
