@@ -5,38 +5,43 @@ Secondary Color (Blurple): #7476B0;
 Accent Color (Wine): #653040;
 */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #F8FAFF;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
-  color: #707070
+  color: #585858;
 }
 
 h1, h2, h3, h4 {
   font-family: 'Khula', sans-serif;
   line-height: 1.4;
-  color: #707070
+  color: #585858;
+  text-align: center;
 }
 
 h1{
-  font-size: 2.25em;
+  font-size: 1.8em;
   font-weight: 700;
 }
 
 h2{
-  font-size: 1.75em;
+  font-size: 1.6em;
   font-weight: 700;
 }
 
 h3{
-  font-size: 1.35em;
+  font-size: 1.4em;
   font-weight: 400;
 }
 
 h4{
-  font-size: 1.00em;
+  font-size: 1.2em;
   font-weight: 400;
 }
 
@@ -73,13 +78,16 @@ a:active {
 }
 
 .button {
-  display: inline-block;
+  display: block;
   background-color: #7476B0;
   color: #F8FAFF;
   font-weight: 500;
   padding: 10px;
   border-radius: 3px;
   transition: 0.2s opacity;
+  width: 290px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .button:visited {
@@ -115,16 +123,85 @@ a:active {
   border: 2px solid #653040;
 }
 
-#hero {}
+/* Layout styling */
 
-#work {}
+.container {
+  padding: 0 15px;
+}
 
-#contact{}
+.icon {
+  display: inline-block;
+  width: 24px;
+  vertical-align: middle;
+  text-align: center;
+  background-color: transparent;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+.small.row {
+  margin: 20px 0;
+}
+
+#about .row {
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(116, 118, 176, 0.8);
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(116, 118, 176, 0.8);
+}
+
+.left {
+  text-align: left;
+}
+
+.logo {
+  max-width: 250px;
+  padding-top: 10px;
+}
 
 header {
+  text-align: center;
   background-color: #FAF8FF;
-  border: 2px solid #7476B0;
-  border-radius: 3px;
-  padding: 10px;
-  margin: 10px;
+  padding: 10px 0;
+  box-shadow: 0px 4px 5px 0px rgba(116, 118, 176, 0.35);
+  position: fixed;
+  width: 100%;
 }
+
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#hero {
+  background-color: rgba(116, 118, 176, 0.25);
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+main {
+  padding-top: 157.02px;
+}
+
+#contact{}
