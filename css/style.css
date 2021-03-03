@@ -87,7 +87,7 @@ a:active {
   padding: 10px;
   border-radius: 3px;
   transition: 0.2s opacity;
-  width: 290px;
+  max-width: 290px;
   text-align: center;
   margin: 0 auto;
 }
@@ -158,13 +158,9 @@ a:active {
 }
 
 .project-page-contact {
-  padding-top: 30px;
+  padding-top: 10px;
   margin: 30px 15px;
   border-top: 1px solid rgba(116, 118, 176, 0.8);
-}
-
-.left {
-  text-align: left;
 }
 
 .logo {
@@ -217,3 +213,8 @@ main {
   .project-description p:last-of-type {
     padding-bottom: 20px;
   }
+
+/*.image {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}*/
