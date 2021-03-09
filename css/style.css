@@ -86,7 +86,9 @@ a:active {
   font-weight: 500;
   padding: 10px;
   border-radius: 3px;
-  transition: 0.2s opacity;
+  opacity: 1;
+  transition-duration: 0.2s;
+  transition-property: opacity;
   max-width: 290px;
   text-align: center;
   margin: 0 auto;
@@ -98,6 +100,7 @@ a:active {
 
 .button:hover {
   opacity: 0.8;
+  border-bottom: 2px solid #653040;
 }
 
 .button:active {
@@ -139,8 +142,22 @@ a:active {
   transform: translate(-7px, -4px);
 }
 
+.this-icon {
+  display: inline-block;
+  width: 27px;
+  vertical-align: middle;
+  text-align: center;
+  background-color: transparent;
+  transform: translate(-7px, -4px);
+}
+
 .row {
   margin: 30px 0;
+}
+
+.this-row {
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(116, 118, 176, 0.8);
 }
 
 .small.row {
@@ -295,10 +312,14 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
     }
-  #about .row:last-of-type {
+  .this-row {
     border-bottom: 0;
-  }
+    }
+  .this-icon {
+    transform: translate(-7px, -3px);
+    }
 }
+
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
