@@ -371,3 +371,31 @@ Large devices (1024px or larger)
 #left-dot {
   animation: 35s spot-move-reverse infinite alternate linear;
 }
+
+@keyframes swell-shrink {
+  scale(factor):1.15;
+}
+
+#cloud1 {
+  animation: 3s swell-shrink infinite alternate linear;
+}
+
+#cloud2 {
+  animation: 3s swell-shrink infinite alternate linear;
+}
+
+#cloud3 {
+  animation: 3s swell-shrink infinite alternate linear;
+}
+
+#cloud4 {
+  animation: 3s swell-shrink infinite alternate linear;
+}
+
+#greencloud1 {
+  animation: 3s swell-shrink infinite alternate linear;
+}
+
+#greencloud2 {
+  animation: 3s swell-shrink infinite alternate linear;
+}
