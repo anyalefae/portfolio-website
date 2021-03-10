@@ -319,52 +319,6 @@ Large devices (1024px or larger)
     }
 }
 
-/* ==============================
-Practice Animation
-================================= */
-/*@keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
-}
-
-.sun {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-@keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
-}
-
-.cloud-front {
-  animation-duration: 26s;
-  animation-name: cloud-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
-}
-
-.cloud-back {
-  animation: 30s cloud-move-reverse infinite alternate linear;
-}*/
-
-/*
-Colors used:
-Primary Color (Off-White): #F8FAFF;
-Secondary Color (Blurple): #7476B0;
-Accent Color (Wine): #653040;
-*/
-
 @keyframes color-change {
   0% {fill: #7476B0;}
   33% {fill: rgb(228, 244, 241);}
@@ -397,12 +351,12 @@ Accent Color (Wine): #653040;
 }
 
 @keyframes spot-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {transform: translate(0,0);}
+  to {transform: translate(200px,0);}
 }
 
 #right-dot {
-  animation-duration: 26s;
+  animation-duration: 30s;
   animation-name: spot-move;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -410,10 +364,10 @@ Accent Color (Wine): #653040;
 }
 
 @keyframes spot-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {transform: translate(0,0);}
+  to {transform: translate(300,0);}
 }
 
 #left-dot {
-  animation: 30s spot-move-reverse infinite alternate linear;
+  animation: 35s spot-move-reverse infinite alternate linear;
 }
