@@ -365,7 +365,7 @@ Large devices (1024px or larger)
 
 @keyframes spot-move-reverse {
   from {transform: translate(0,0);}
-  to {transform: translate(300,0);}
+  to {transform: translate(-300px,0);}
 }
 
 #left-dot {
