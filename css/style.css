@@ -87,7 +87,7 @@ a:active {
   padding: 10px;
   border-radius: 3px;
   opacity: 1;
-  transition: 0.2s opacity;
+  transition: 0.2s all;
   max-width: 290px;
   text-align: center;
   margin: 0 auto;
@@ -319,6 +319,8 @@ Large devices (1024px or larger)
     }
 }
 
+/*KEYFRAMES for CSS animation*/
+
 @keyframes color-change {
   0% {fill: #7476B0;}
   33% {fill: rgb(228, 244, 241);}
@@ -326,7 +328,7 @@ Large devices (1024px or larger)
   100% {fill: #653040;}
 }
 
-#moon-bottom {
+.flower1 {
   animation-duration: 4s;
   animation-name: color-change;
   animation-iteration-count: infinite;
@@ -334,15 +336,23 @@ Large devices (1024px or larger)
   animation-timing-function: linear;
 }
 
-#moon-top {
-  animation-duration: 4s;
+.flower2 {
+  animation-duration: 5s;
   animation-name: color-change;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
 }
 
-#small-circle {
+.flower3 {
+  animation-duration: 6s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.flower4 {
   animation-duration: 6s;
   animation-name: color-change;
   animation-iteration-count: infinite;
@@ -352,50 +362,13 @@ Large devices (1024px or larger)
 
 @keyframes spot-move {
   from {transform: translate(0,0);}
-  to {transform: translate(200px,0);}
+  to {transform: translate(-2000px,-1500px);}
 }
 
-#right-dot {
-  animation-duration: 30s;
+.butterfly {
+  animation-duration: 8s;
   animation-name: spot-move;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
-}
-
-@keyframes spot-move-reverse {
-  from {transform: translate(0,0);}
-  to {transform: translate(-300px,0);}
-}
-
-#left-dot {
-  animation: 35s spot-move-reverse infinite alternate linear;
-}
-
-@keyframes swell-shrink {
-  scale(factor):1.15;
-}
-
-#cloud1 {
-  animation: 3s swell-shrink infinite alternate linear;
-}
-
-#cloud2 {
-  animation: 3s swell-shrink infinite alternate linear;
-}
-
-#cloud3 {
-  animation: 3s swell-shrink infinite alternate linear;
-}
-
-#cloud4 {
-  animation: 3s swell-shrink infinite alternate linear;
-}
-
-#greencloud1 {
-  animation: 3s swell-shrink infinite alternate linear;
-}
-
-#greencloud2 {
-  animation: 3s swell-shrink infinite alternate linear;
 }
