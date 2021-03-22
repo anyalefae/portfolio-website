@@ -226,10 +226,27 @@ nav > ul > li > a {
   top: 16px;
   font-size: 20px;
   padding-right: 0;
+  border-bottom: none;
+  color: #7476B0;
+}
+
+.navtoggle.responsive li .menu {
+  color: #653040;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
 }
 
 .navtoggle.responsive li  {
   display: block;
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid rgba(116, 118, 176, 0.8);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 #hero {
