@@ -360,6 +360,13 @@ Large devices (1024px or larger)
   .this-icon {
     transform: translate(-7px, -3px);
     }
+  .navtoggle.responsive nav {
+    padding: 0 0 0;
+    }
+  .navtoggle.responsive li  {
+    padding: 0;
+    border-top: none;
+    }
 }
 
 /*KEYFRAMES for CSS animation*/
