@@ -143,7 +143,7 @@ a:active {
 
 .this-icon {
   display: inline-block;
-  width: 27px;
+  width: 26px;
   vertical-align: middle;
   text-align: center;
   background-color: transparent;
@@ -263,9 +263,13 @@ main {
 
 #contact{}
 
-  .project-description p:last-of-type {
-    padding-bottom: 20px;
-  }
+.project-description p:last-of-type {
+  padding-bottom: 20px;
+}
+
+#about > p: last-of-type {
+  padding-bottom: 14px;
+}
 
 /*.image {
   margin-top: 25px;
@@ -295,6 +299,13 @@ Medium devices (640px and larger)
     }
   .navtoggle li:last-child {
     display: none;
+    }
+  .navtoggle.responsive nav {
+    padding: 0 0 0;
+    }
+  .navtoggle.responsive li  {
+    padding: 0;
+    border-top: none;
     }
   .logo {
     min-width: 250px;
@@ -332,6 +343,12 @@ Medium devices (640px and larger)
     margin-top: 0;
     margin-bottom: 20px;
     }
+  #about > p: last-of-type {
+    padding-bottom: 0;
+  }
+  #contact > p {
+    text-align: center;
+  }
 }
 
 /* ==============================
@@ -359,13 +376,6 @@ Large devices (1024px or larger)
     }
   .this-icon {
     transform: translate(-7px, -3px);
-    }
-  .navtoggle.responsive nav {
-    padding: 0 0 0;
-    }
-  .navtoggle.responsive li  {
-    padding: 0;
-    border-top: none;
     }
 }
 
