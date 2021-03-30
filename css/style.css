@@ -267,7 +267,7 @@ main {
   padding-bottom: 20px;
 }
 
-#about > p: last-of-type {
+#about p:last-of-type {
   padding-bottom: 14px;
 }
 
@@ -343,10 +343,10 @@ Medium devices (640px and larger)
     margin-top: 0;
     margin-bottom: 20px;
     }
-  #about > p: last-of-type {
+  #about p:last-of-type {
     padding-bottom: 0;
   }
-  #contact > p {
+  #contact p {
     text-align: center;
   }
 }
