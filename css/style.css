@@ -352,6 +352,7 @@ Medium devices (640px and larger)
     text-align: center;
     }
   .headshot {
+    display: block;
     width:60%;
     margin: auto;
     }
