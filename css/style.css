@@ -154,7 +154,17 @@ a:active {
   margin: 20px 0;
 }
 
-#about .container.row {
+.big {
+  font-size: 43.2px;
+  color: #7476b0;
+}
+
+.small {
+  font-size: 27px;
+  font-weight: 400;
+}
+
+#about .row {
   padding-bottom: 15px;
   border-bottom: 1.5px solid rgba(116, 118, 176, 0.2);
 }
@@ -189,10 +199,9 @@ a:active {
   padding-top: 15px;
 }
 
-big {
+/*big {
   color: #7476b0;
-}
-
+}*/
 header {
   background-color: #f8faff;
   box-shadow: 0 4px 5px 0 rgba(116, 118, 176, 0.35);
@@ -382,7 +391,8 @@ Medium devices (640px and larger)
 
   .quote {
     float: left;
-    width: 70%;
+    width: 60%;
+    line-height: 1em;
   }
 
   .headshot {
