@@ -27,15 +27,15 @@ h4 {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: 500;
-  text-align: center;
+  text-align: left;
 }
 
 h2 {
-  font-size: 1.7em;
+  font-size: 2em;
   font-weight: 500;
-  text-align: center;
+  text-align: left;
 }
 
 h3 {
@@ -61,6 +61,7 @@ video {
 a {
   color: #7476b0;
   text-decoration: none;
+  font-size: 18px;
 }
 
 a:visited {
@@ -82,18 +83,16 @@ a:active {
 }
 
 .button {
-  display: block;
+  display: inline-block;
   background-color: #7476b0;
   color: #f8faff;
   font-weight: 500;
-  font-size: 18px;
   padding: 10px;
   border-radius: 3px;
   opacity: 1;
   transition: 0.2s all;
-  max-width: 290px;
+  width: 112px;
   text-align: center;
-  margin: 0 auto;
 }
 
 .button:visited {
@@ -112,7 +111,6 @@ a:active {
 .button.contact {
   background-color: transparent;
   color: #7476b0;
-  text-transform: uppercase;
   border: 2px solid #7476b0;
 }
 
@@ -131,16 +129,7 @@ a:active {
 
 /* Layout styling */
 .container {
-  padding: 0 15px;
-}
-
-.icon {
-  display: inline-block;
-  width: 26px;
-  vertical-align: middle;
-  text-align: center;
-  background-color: transparent;
-  transform: translate(-7px, -4px);
+  padding: 0 20px;
 }
 
 .this-icon {
@@ -158,21 +147,29 @@ a:active {
 
 .this-row {
   padding-bottom: 15px;
-  border-bottom: 1px solid rgba(116, 118, 176, 0.8);
+  border-bottom: 1.5px solid rgba(116, 118, 176, 0.2);
 }
 
 .small.row {
   margin: 20px 0;
 }
 
-#about .row {
+#about .container.row {
   padding-bottom: 15px;
-  border-bottom: 1px solid rgba(116, 118, 176, 0.8);
+  border-bottom: 1.5px solid rgba(116, 118, 176, 0.2);
+}
+
+#about .quote {
+  margin: 30px 20px;
 }
 
 #work .row {
   padding-bottom: 30px;
-  border-bottom: 1px solid rgba(116, 118, 176, 0.8);
+  border-bottom: 1.5px solid rgba(116, 118, 176, 0.2);
+}
+
+#contact p {
+  margin-bottom: 30px;
 }
 
 .row::after {
@@ -184,12 +181,16 @@ a:active {
 .project-page-contact {
   padding-top: 10px;
   margin: 30px 15px;
-  border-top: 1px solid rgba(116, 118, 176, 0.8);
+  border-top: 1.5px solid rgba(116, 118, 176, 0.2);
 }
 
 .logo {
   max-width: 180px;
   padding-top: 15px;
+}
+
+big {
+  color: #7476b0;
 }
 
 header {
@@ -208,7 +209,6 @@ nav>ul {
 
 nav>ul>li>a {
   padding: 0;
-  text-transform: uppercase;
   font-weight: 600;
   margin-left: 10px;
   margin-right: 10px;
@@ -243,9 +243,9 @@ nav>ul>li>a {
 
 .navtoggle.responsive li {
   display: block;
-  text-align: center;
+  text-align: left;
   padding: 10px 0;
-  border-top: 1px solid rgba(116, 118, 176, 0.8);
+  border-top: 1.5px solid rgba(116, 118, 176, 0.2);
 }
 
 .navtoggle.responsive li:last-child {
@@ -253,18 +253,26 @@ nav>ul>li>a {
 }
 
 #hero {
-  background-color: rgba(116, 118, 176, 0.25);
+  background-color: rgba(116, 118, 176, 0.2);
   padding: 20px 0;
   display: inline-block;
   width: 100%;
-  text-align: center;
+  text-align: left;
+}
+
+#about h2 {
+  margin: 0;
+}
+
+.headshot {
+  display: block;
+  max-width: 55%;
+  margin: 50px auto;
 }
 
 main {
   padding-top: 93.61px;
 }
-
-#contact {}
 
 .project-description p:last-of-type {
   padding-bottom: 20px;
@@ -272,10 +280,6 @@ main {
 
 #about p:last-of-type {
   padding-bottom: 14px;
-}
-
-.center {
-  text-align: center;
 }
 
 /* ==============================
@@ -328,6 +332,14 @@ Medium devices (640px and larger)
     padding-right: 10px;
   }
 
+  #about .hero {
+    background-color: rgba(116, 118, 176, 0.2);
+    padding: 30px 25px;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+  }
+
   main {
     padding-top: 104.81px;
   }
@@ -368,14 +380,16 @@ Medium devices (640px and larger)
     padding-bottom: 0;
   }
 
-  #contact p {
-    text-align: center;
+  .quote {
+    float: left;
+    width: 70%;
   }
 
   .headshot {
-    display: block;
-    width: 60%;
-    margin: auto;
+    display: inline-block;
+    max-width: 30%;
+    float: right;
+    margin: 30px 0;
   }
 
   #about .col-lg-5 {
@@ -407,6 +421,10 @@ Large devices (1024px or larger)
 
   #about.col-lg-12 {
     width: 100%;
+  }
+
+  #about .hero {
+    padding: 30px 50px;
   }
 
   .container {
