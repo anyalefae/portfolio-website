@@ -4,13 +4,12 @@ Primary Color (Off-White): #F8FAFF;
 Secondary Color (Blurple): #7476B0;
 Accent Color (Wine): #653040;
 */
-
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #F8FAFF;
+  background-color: #f8faff;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -18,31 +17,34 @@ body {
   color: #332f33;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: 'Josefin Sans', sans-serif;
   line-height: 1.4;
   color: #332f33;
 }
 
-h1{
+h1 {
   font-size: 2em;
   font-weight: 500;
   text-align: center;
 }
 
-h2{
+h2 {
   font-size: 1.7em;
   font-weight: 500;
   text-align: center;
 }
 
-h3{
+h3 {
   font-size: 1.5em;
   font-weight: 400;
   text-align: left;
 }
 
-h4{
+h4 {
   font-size: 1.25em;
   font-weight: 400;
   text-align: left;
@@ -57,22 +59,22 @@ video {
 }
 
 a {
-  color: #7476B0;
+  color: #7476b0;
   text-decoration: none;
 }
 
 a:visited {
-  color: #7476B0;
+  color: #7476b0;
   text-decoration: none;
-	padding-bottom: 1px;
-	border-bottom: 1px solid #7476B0;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #7476b0;
 }
 
 a:hover,
 a:focus {
   color: #653040;
   text-decoration: none;
-	border-bottom: 2px solid #653040;
+  border-bottom: 2px solid #653040;
 }
 
 a:active {
@@ -81,9 +83,10 @@ a:active {
 
 .button {
   display: block;
-  background-color: #7476B0;
-  color: #F8FAFF;
+  background-color: #7476b0;
+  color: #f8faff;
   font-weight: 500;
+  font-size: 18px;
   padding: 10px;
   border-radius: 3px;
   opacity: 1;
@@ -94,7 +97,7 @@ a:active {
 }
 
 .button:visited {
-  color: #F8FAFF;
+  color: #f8faff;
 }
 
 .button:hover {
@@ -103,21 +106,21 @@ a:active {
 }
 
 .button:active {
-  color: #653040
+  color: #653040;
 }
 
 .button.contact {
   background-color: transparent;
-  color: #7476B0;
+  color: #7476b0;
   text-transform: uppercase;
-  border: 2px solid #7476B0;
+  border: 2px solid #7476b0;
 }
 
 .button.contact:hover {
-  background-color: #7476B0;
-  color: #F8FAFF;
+  background-color: #7476b0;
+  color: #f8faff;
   opacity: 0.8;
-	border-bottom: 2px solid #653040;
+  border-bottom: 2px solid #653040;
 }
 
 .button.contact:active {
@@ -127,7 +130,6 @@ a:active {
 }
 
 /* Layout styling */
-
 .container {
   padding: 0 15px;
 }
@@ -191,20 +193,20 @@ a:active {
 }
 
 header {
-  background-color: #FAF8FF;
-  box-shadow: 0px 4px 5px 0px rgba(116, 118, 176, 0.35);
+  background-color: #f8faff;
+  box-shadow: 0 4px 5px 0 rgba(116, 118, 176, 0.35);
   position: fixed;
   width: 100%;
   padding: 10px 0 4px;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0;
   text-transform: uppercase;
   font-weight: 600;
@@ -216,7 +218,8 @@ nav > ul > li > a {
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -227,7 +230,7 @@ nav > ul > li > a {
   font-size: 20px;
   padding-right: 0;
   border-bottom: none;
-  color: #7476B0;
+  color: #7476b0;
 }
 
 .navtoggle.responsive li .menu {
@@ -238,14 +241,14 @@ nav > ul > li > a {
   padding: 24px 0 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   text-align: center;
   padding: 10px 0;
   border-top: 1px solid rgba(116, 118, 176, 0.8);
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -261,7 +264,7 @@ main {
   padding-top: 93.61px;
 }
 
-#contact{}
+#contact {}
 
 .project-description p:last-of-type {
   padding-bottom: 20px;
@@ -275,143 +278,177 @@ main {
   text-align: center;
 }
 
-
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
-    padding: 20px 0 0 0;
-    }
-  nav > ul {
+    padding: 20px 0 0;
+  }
+
+  nav>ul {
     margin: 1em 0;
-    }
-  nav > ul > li {
+  }
+
+  nav>ul>li {
     display: inline-block;
-    }
+  }
+
   nav {
     width: auto;
     float: right;
-    }
+  }
+
   .navtoggle li:not(:last-child) {
     display: inline-block;
-    }
+  }
+
   .navtoggle li:last-child {
     display: none;
-    }
+  }
+
   .navtoggle.responsive nav {
-    padding: 0 0 0;
-    }
-  .navtoggle.responsive li  {
+    padding: 0;
+  }
+
+  .navtoggle.responsive li {
     padding: 0;
     border-top: none;
-    }
+  }
+
   .logo {
     min-width: 250px;
     padding-top: unset;
     padding-left: 10px;
-    }
+  }
+
   #hero {
     padding-left: 10px;
     padding-right: 10px;
-    }
+  }
+
   main {
     padding-top: 104.81px;
-    }
+  }
+
   body {
     font-size: 18px;
-    }
+  }
+
   .col-md-6 {
     width: 50%;
     padding-left: 10px;
     padding-right: 10px;
-    }
+  }
+
   [class*="col-"] {
     float: left;
-    }
+  }
+
   #work h2 {
     margin-top: 0;
-    }
+  }
+
   #contact h1 {
     margin-bottom: 15px;
-    }
+  }
+
   #contact p {
     margin-top: 15px;
     margin-bottom: 30px;
-    }
+  }
+
   #about h3 {
     margin-top: 0;
     margin-bottom: 20px;
-    }
+  }
+
   #about p:last-of-type {
     padding-bottom: 0;
-    }
+  }
+
   #contact p {
     text-align: center;
-    }
+  }
+
   .headshot {
     display: block;
-    width:60%;
+    width: 60%;
     margin: auto;
-    }
+  }
+
   #about .col-lg-5 {
     width: 100%;
-    }
+  }
+
   .container {
     padding: 0 25px;
-    }
+  }
 }
-
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-
 @media only screen and (min-width: 1024px) {
   #work.col-lg-7 {
     width: 60%;
     float: left;
     padding-right: 15px;
     padding-left: 0;
-    }
+  }
+
   #work.col-lg-5 {
     width: 40%;
     float: right;
     padding-left: 15px;
     padding-right: 0;
-    }
+  }
+
   #about.col-lg-12 {
-    width: 100%
-    }
+    width: 100%;
+  }
+
   .container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    }
+  }
+
   .this-row {
     border-bottom: 0;
-    }
+  }
+
   .this-icon {
     transform: translate(-7px, -3px);
-    }
+  }
+
   .container {
     padding: 0 50px;
-    }
+  }
+
   .user-persona {
     width: 33%;
   }
 }
 
-
-/*KEYFRAMES for CSS animation*/
-
+/* KEYFRAMES for CSS animation */
 @keyframes color-change {
-  0% {fill: #7476B0;}
-  40% {fill: rgb(228, 244, 241);}
-  50% {fill: rgb(228, 218, 219);}
-  100% {fill: #653040;}
+  0% {
+    fill: #7476b0;
+  }
+
+  40% {
+    fill: rgb(228, 244, 241);
+  }
+
+  50% {
+    fill: rgb(228, 218, 219);
+  }
+
+  100% {
+    fill: #653040;
+  }
 }
 
 #line {
@@ -455,8 +492,13 @@ Large devices (1024px or larger)
 }
 
 @keyframes move {
-  from {transform: translate(0,0);}
-  to {transform: translate(-2000px,-1500px);}
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(-2000px, -1500px);
+  }
 }
 
 .butterfly {
@@ -468,8 +510,13 @@ Large devices (1024px or larger)
 }
 
 @keyframes crescendo {
-  0%   {transform: scale(1);}
-  100% {transform: scale(1.05);}
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.05);
+  }
 }
 
 .scaled-flower {
