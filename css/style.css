@@ -28,13 +28,13 @@ h4 {
 
 h1 {
   font-size: 2.5em;
-  font-weight: 500;
+  font-weight: 400;
   text-align: left;
 }
 
 h2 {
   font-size: 2em;
-  font-weight: 500;
+  font-weight: 400;
   text-align: left;
 }
 
@@ -62,6 +62,7 @@ a {
   color: #7476b0;
   text-decoration: none;
   font-size: 18px;
+  letter-spacing: .5px;
 }
 
 a:visited {
@@ -91,7 +92,7 @@ a:active {
   border-radius: 3px;
   opacity: 1;
   transition: 0.2s all;
-  width: 112px;
+  width: 115px;
   text-align: center;
 }
 
@@ -161,7 +162,6 @@ a:active {
 
 .small {
   font-size: 27px;
-  font-weight: 400;
 }
 
 #about .row {
@@ -194,20 +194,18 @@ a:active {
   border-top: 1.5px solid rgba(116, 118, 176, 0.2);
 }
 
-.logo {
-  max-width: 180px;
-  padding-top: 15px;
+h2.logo-text {
+  margin: 0;
+  display: inline-block;
 }
 
-/*big {
-  color: #7476b0;
-}*/
 header {
   background-color: #f8faff;
   box-shadow: 0 4px 5px 0 rgba(116, 118, 176, 0.35);
   position: fixed;
   width: 100%;
-  padding: 10px 0 4px;
+  padding-top: 30px;
+  padding-bottom: 15px;
 }
 
 nav>ul {
@@ -217,10 +215,8 @@ nav>ul {
 }
 
 nav>ul>li>a {
-  padding: 0;
-  font-weight: 600;
   margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 0;
 }
 
 .navtoggle li:not(:last-child) {
@@ -235,7 +231,7 @@ nav>ul>li>a {
 .navtoggle li .menu {
   position: absolute;
   right: 0;
-  top: 16px;
+  top: 5px;
   font-size: 20px;
   padding-right: 0;
   border-bottom: none;
@@ -280,7 +276,7 @@ nav>ul>li>a {
 }
 
 main {
-  padding-top: 93.61px;
+  padding-top: 89px;
 }
 
 .project-description p:last-of-type {
@@ -295,10 +291,7 @@ main {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-  header {
-    text-align: unset;
-    padding: 20px 0 0;
-  }
+  header {}
 
   nav>ul {
     margin: 1em 0;
@@ -306,6 +299,13 @@ Medium devices (640px and larger)
 
   nav>ul>li {
     display: inline-block;
+  }
+
+  nav>ul>li>a {
+    padding: 0;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-right: 0;
   }
 
   nav {
@@ -339,6 +339,7 @@ Medium devices (640px and larger)
   #hero {
     padding-left: 10px;
     padding-right: 10px;
+    margin-top: 0;
   }
 
   #about .hero {
@@ -350,7 +351,7 @@ Medium devices (640px and larger)
   }
 
   main {
-    padding-top: 104.81px;
+    padding-top: 109.81px;
   }
 
   body {
@@ -389,17 +390,18 @@ Medium devices (640px and larger)
     padding-bottom: 0;
   }
 
-  .quote {
+  #about .quote {
     float: left;
     width: 60%;
-    line-height: 1em;
+    margin: 0;
   }
 
   .headshot {
     display: inline-block;
-    max-width: 30%;
+    width: 30%;
+    max-width: 290.09px;
     float: right;
-    margin: 30px 0;
+    margin: 0;
   }
 
   #about .col-lg-5 {
@@ -409,144 +411,164 @@ Medium devices (640px and larger)
   .container {
     padding: 0 25px;
   }
-}
 
-/* ==============================
+  h2.logo-text {
+    margin-top: 5px;
+  }
+
+  /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {
-  #work.col-lg-7 {
-    width: 60%;
-    float: left;
-    padding-right: 15px;
-    padding-left: 0;
+  @media only screen and (min-width: 1024px) {
+    #work.col-lg-7 {
+      width: 60%;
+      float: left;
+      padding-right: 15px;
+      padding-left: 0;
+    }
+
+    #work.col-lg-5 {
+      width: 40%;
+      float: right;
+      padding-left: 15px;
+      padding-right: 0;
+    }
+
+    #about.col-lg-12 {
+      width: 100%;
+    }
+
+    #about .hero-container {
+      background-color: rgba(116, 118, 176, 0.2);
+    }
+
+    #about .hero {
+      background-color: unset;
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 30px 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .this-row {
+      border-bottom: 0;
+    }
+
+    .this-icon {
+      transform: translate(-7px, -3px);
+    }
+
+    .container {
+      padding: 0 50px;
+    }
+
+    .user-persona {
+      width: 33%;
+    }
+
+    .headshot {
+      margin-right: 50px;
+      margin-top: 10px;
+    }
+
+    #about .quote {
+      margin-left: 50px;
+      margin-top: 10px;
+    }
   }
 
-  #work.col-lg-5 {
-    width: 40%;
-    float: right;
-    padding-left: 15px;
-    padding-right: 0;
+  /* KEYFRAMES for CSS animation */
+  @keyframes color-change {
+    0% {
+      fill: #7476b0;
+    }
+
+    40% {
+      fill: rgb(228, 244, 241);
+    }
+
+    50% {
+      fill: rgb(228, 218, 219);
+    }
+
+    100% {
+      fill: #653040;
+    }
   }
 
-  #about.col-lg-12 {
-    width: 100%;
+  #line {
+    animation-duration: 6s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
   }
 
-  #about .hero {
-    padding: 30px 50px;
+  .flower1 {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
   }
 
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+  .flower2 {
+    animation-duration: 5s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
   }
 
-  .this-row {
-    border-bottom: 0;
+  .flower3 {
+    animation-duration: 6s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
   }
 
-  .this-icon {
-    transform: translate(-7px, -3px);
+  .flower4 {
+    animation-duration: 6s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
   }
 
-  .container {
-    padding: 0 50px;
+  @keyframes move {
+    from {
+      transform: translate(0, 0);
+    }
+
+    to {
+      transform: translate(-2000px, -1500px);
+    }
   }
 
-  .user-persona {
-    width: 33%;
-  }
-}
-
-/* KEYFRAMES for CSS animation */
-@keyframes color-change {
-  0% {
-    fill: #7476b0;
+  .butterfly {
+    animation-duration: 8s;
+    animation-name: move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
   }
 
-  40% {
-    fill: rgb(228, 244, 241);
+  @keyframes crescendo {
+    0% {
+      transform: scale(1);
+    }
+
+    100% {
+      transform: scale(1.05);
+    }
   }
 
-  50% {
-    fill: rgb(228, 218, 219);
+  .scaled-flower {
+    animation: crescendo 3.5s alternate infinite ease-in;
   }
-
-  100% {
-    fill: #653040;
-  }
-}
-
-#line {
-  animation-duration: 6s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-.flower1 {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-.flower2 {
-  animation-duration: 5s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-.flower3 {
-  animation-duration: 6s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-.flower4 {
-  animation-duration: 6s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-@keyframes move {
-  from {
-    transform: translate(0, 0);
-  }
-
-  to {
-    transform: translate(-2000px, -1500px);
-  }
-}
-
-.butterfly {
-  animation-duration: 8s;
-  animation-name: move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-@keyframes crescendo {
-  0% {
-    transform: scale(1);
-  }
-
-  100% {
-    transform: scale(1.05);
-  }
-}
-
-.scaled-flower {
-  animation: crescendo 3.5s alternate infinite ease-in;
-}
