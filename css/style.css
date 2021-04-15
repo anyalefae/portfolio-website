@@ -170,7 +170,8 @@ a:active {
 }
 
 #about .quote {
-  margin: 30px 20px;
+  padding: 30px 20px;
+  background-color: rgba(116, 118, 176, 0.2);
 }
 
 #work .row {
@@ -391,9 +392,10 @@ Medium devices (640px and larger)
   }
 
   #about .quote {
+    background-color: unset;
     float: left;
     width: 60%;
-    margin: 0;
+    padding: 0;
   }
 
   .headshot {
