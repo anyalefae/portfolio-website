@@ -346,7 +346,7 @@ Medium devices (640px and larger)
   #about .hero {
     background-color: rgba(116, 118, 176, 0.2);
     padding: 30px 25px;
-    display: inline-block;
+    overflow: hidden;
     width: 100%;
     text-align: left;
   }
