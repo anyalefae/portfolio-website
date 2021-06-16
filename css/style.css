@@ -83,6 +83,10 @@ a:active {
   color: #653040;
 }
 
+a.logo-link {
+  border-bottom: none;
+}
+
 .button {
   display: inline-block;
   background-color: #7476b0;
