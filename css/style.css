@@ -199,9 +199,10 @@ a.logo-link {
   border-top: 1.5px solid rgba(116, 118, 176, 0.2);
 }
 
-h2.logo-text {
+.logo-text {
   margin: 0;
   display: inline-block;
+  font-size: 1.75em;
 }
 
 header {
@@ -418,8 +419,9 @@ Medium devices (640px and larger)
     padding: 0 25px;
   }
 
-  h2.logo-text {
+  .logo-text {
     margin-top: 5px;
+    font-size: 2em;
   }
 
   /* ==============================

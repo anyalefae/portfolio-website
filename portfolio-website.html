@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>My Portfolio Website</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/590c6ba65a.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+        <a class="logo-link" href="index.html">
+          <h2 class=logo-text>Jordanya le Fae</h2>
+        </a>
+        <nav>
+          <ul>
+            <li><a style="font-weight: 500" href="index.html">Work</a></li>
+            <li><a style="font-weight: 500" href="about.html">About</a></li>
+            <li><a onclick="menuToggle()" style="font-weight: 500" href="#contact">Contact</a></li>
+            <li><a href="javascript:void(0);" class="menu" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div>
+      <div class="container">
+
+        <br>
+        <h1>My Portfolio Website</h1>
+        <picture>
+          <source srcset="img/portfolio-website/home-large.jpg" media="(max-width:767px)">
+          <img src="img/portfolio-website/home-small.jpg" alt="My Portfolio Website" class="image">
+        </picture>
+        <h3>Overview</h3>
+        <p>This was a project from the CareerFoundry curriculum. The purpose was to showcase my UX/UI
+          Design abilities through the development of my HTML, CSS and Javascript skills by building a
+          website from scratch to host my portfolio.</p>
+
+        <h2>Context and Challenge</h2>
+
+        <h3>Background and Description</h3>
+        <p>This project was a part of my Frontend Web Development for
+          Designers course through CareerFoundry. Using HTML, CSS, and JS, my aim was to write the code
+          for my design portfolio website.</p>
+
+        <h3>Problem</h3>
+        <p>As an aspiring designer, I lacked a way to showcase my work to prospective employers
+          or clients.</p>
+
+        <h3>Goals</h3>
+        <p>Build a professional network through an online presence and provide future work
+          opportunities with the means to see my work and contact me for jobs via my design portfolio
+          website.</p>
+
+        <h2>Process and Insights</h2>
+
+        <ul>
+          <li>Selected a feel to later apply to my website using typography, colors, and content</li>
+          <br>
+          <li>Input HTML, CSS and JS code into Atom files to produce a mobile-first, responsive design based
+            upon a provided low-fidelity wireframe</li>
+          <br>
+          <li>Constantly checked my results for each break point in the browser in order to catch problems
+            early on</li>
+          <br>
+          <li>Shared my progress with my mentor for feedback via GitHub and revised accordingly</li>
+          <br>
+          <li>Inserted my personal information and my case studies showcasing my design projects once the
+            structure of the website was intact</li>
+          <br>
+          <li>Modified the website design to fit my personal style and preferences once I felt comfortable with
+            my coding capabilities</li>
+          <br>
+          <li>Conducted user testing with 5 participants</li>
+          <br>
+          <li>Using my discretion, I revised my website’s design and content based upon user feedback</li>
+          <br>
+          <li>Cross-browser tested my final design and made any necessary tweaks to the website before
+            publishing it</li>
+        </ul>
+
+        <br>
+        <p>I initially selected to stick to the provided design template as I was learning to code. Once the basic
+          website structure was good to go and my content inserted appropriately, I took more creative
+          liberty and adapted the layout to better fit my style. My goal was to design a website that was
+          subtle enough to let my projects shine, but not so dull as to be boring or bland. This was the fun
+          part, as I felt confident enough to edit the code without instructions and create something more
+          original. My mentor was extremely helpful along the way, knowing when to guide me and when to
+          let me scramble for the solution on my own. When I did scramble, I learned a lot about how to be
+          resourceful when it comes to learning code, and discovered many insightful articles and youtube
+          channels along the way.</p>
+
+        <h2>Solution</h2>
+        <picture>
+          <source srcset="img/portfolio-website/about-small.jpg" media="(max-width:767px)">
+          <img src="img/portfolio-website/about-large.jpg" alt="My Portfolio Website" class="image">
+        </picture>
+        <picture>
+          <source srcset="img/portfolio-website/connect-small.jpg" media="(max-width:767px)">
+          <img src="img/portfolio-website/connect-large.jpg" alt="My Portfolio Website" class="image">
+        </picture>
+        <picture>
+          <source srcset="img/portfolio-website/noted-small.jpg" media="(max-width:767px)">
+          <img src="img/portfolio-website/noted-large.jpg" alt="My Portfolio Website" class="image">
+        </picture>
+        <picture>
+          <source srcset="img/portfolio-website/contact-small.jpg" media="(max-width:767px)">
+          <img src="img/portfolio-website/contact-large.jpg" alt="My Portfolio Website" class="image">
+        </picture>
+      </div>
+    </div>
+
+  </main>
+
+  <footer id="contact">
+    <div class="project-page-contact container">
+      <h1>Get in Touch</h1>
+      <p>If you are interested in working with me, please reach out.</p>
+      <div class="small row">
+        <a style="font-weight: 500" href="mailto:anya.le.fae@gmail.com" class="button contact">Email me</a>
+      </div>
+      <div class="small row">
+        <a style="font-weight: 500" href="https://www.linkedin.com/in/jordanyalefae" class="button contact">LinkedIn</a>
+      </div>
+      <p><small>Copyright Jordanya le Fae 2021</small></p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
